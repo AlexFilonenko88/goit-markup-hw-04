@@ -193,6 +193,23 @@ img {
   text-align: center;
 }
 
+.hero {
+  height: 600px;
+  outline: 1px solid black;
+  max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/hero-img.jpg");
+}
+
 .hero-title {
   margin-top: 0px;
   margin-bottom: 30px;
@@ -233,6 +250,35 @@ img {
 .offers-list-nav {
   margin-right: 30px;
   width: 270px;
+}
+
+.offers-list-nav::before {
+  content: "";
+  display: block;
+  height: 120px;
+
+  background-size: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f5f4fa;
+  margin-bottom: 30px;
+  border-radius: 4px;
+}
+
+.icon-antenna::before {
+  background-image: url("../images/offers/Group1.svg");
+}
+
+.icon-clock::before {
+  background-image: url("../images/offers/clock.svg");
+}
+
+.icon-diagram::before {
+  background-image: url("../images/offers/diagram.svg");
+}
+
+.icon-astronaut::before {
+  background-image: url("../images/offers/astronaut.svg");
 }
 
 .offers-list-nav:last-child {
@@ -276,9 +322,9 @@ img {
 
 /* Наша команда */
 
-.teams-title {
+.teams-title,
+.customers-title {
   margin-top: 0px;
-  margin-bottom: 0px;
 
   margin-bottom: 50px;
 
@@ -328,6 +374,45 @@ img {
   line-height: 1.16;
   text-align: center;
 }
+
+/* Customers */
+
+.customers {
+  margin-top: 0px;
+  margin-bottom: 1px;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.customers-title-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+
+  margin: 0;
+  padding: 0;
+}
+
+.customers-list {
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin: 0 30px 0 0;
+  padding: 16px 32px;
+  width: 170px;
+  height: 92px;
+}
+
+.customers-list:last-child {
+  margin-right: 0;
+}
+
+.customers-list-div {
+  margin: 0;
+  padding: 0;
+}
+/* 
+
 
 /* Футер */
 
@@ -381,6 +466,10 @@ img {
 .list-teams-border {
   background-color: #ffffff;
   width: 270px;
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .list-teams-border:last-child {
