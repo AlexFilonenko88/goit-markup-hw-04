@@ -709,6 +709,24 @@ img {
 
 .footer-list {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+  align-items: baseline;
+}
+
+.footer-icon {
+  margin-left: 70px;
+}
+
+.footer-icon > h2 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+}
+
+.teams-icon {
+  background-color: rgba(255, 255, 255, 0.1);
 }
