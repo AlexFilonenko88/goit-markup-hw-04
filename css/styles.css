@@ -290,6 +290,7 @@ img {
 .offers-list-nav:last-child {
   margin-right: 0;
 } */
+
 .icon-list {
   display: flex;
   justify-content: center;
@@ -670,19 +671,26 @@ img {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  /* background-color: green; */
   display: inline-flex;
   justify-content: center;
   align-items: center;
 }
 
-.teams-a:hover,
+/* .teams-a:hover,
 .teams-a:focus {
   background-color: var(--accent-color);
 }
 
 .icon:hover,
 .icon:focus {
+  fill: var(--primary-white-color);
+} */
+
+.teams-a:hover,
+.teams-a:focus,
+.icon:hover,
+.icon:focus {
+  background-color: var(--accent-color);
   fill: var(--primary-white-color);
 }
 
