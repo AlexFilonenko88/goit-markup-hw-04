@@ -252,7 +252,7 @@ img {
   width: 270px;
 }
 
-.offers-list-nav::before {
+/* .offers-list-nav::before {
   content: "";
   display: block;
   height: 120px;
@@ -283,6 +283,16 @@ img {
 
 .offers-list-nav:last-child {
   margin-right: 0;
+} */
+.icon-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f4fa;
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  margin-bottom: 30px;
 }
 
 .offers-list-title {
@@ -398,9 +408,12 @@ img {
   box-sizing: border-box;
   border-radius: 4px;
   margin: 0 30px 0 0;
-  padding: 16px 32px;
   width: 170px;
   height: 92px;
+}
+
+.customers-list:hover {
+  border: 1px solid var(--accent-color);
 }
 
 .customers-list:last-child {
@@ -447,7 +460,6 @@ img {
 
   font-style: normal;
 }
-
 .list-works,
 .list-teams {
   list-style: none;
@@ -533,6 +545,12 @@ img {
   margin-left: auto;
 }
 
+.link-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .list-link-hp {
   padding: 20px 24px 17px;
 
@@ -597,7 +615,17 @@ img {
   margin-bottom: 30px;
   width: 370px;
   background-color: #ffffff;
-  /* flex-basis: calc((100%-60px) / 3); */
+}
+
+.list-link-li:hover {
+  box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
+    0px 2px 1px rgb(0 0 0 / 20%);
+}
+
+.list-link-hp:hover {
+  border-right: 0;
+  border-bottom: 0;
+  border-left: 0;
 }
 
 .list-link-li:nth-child(3n) {
@@ -606,4 +634,81 @@ img {
 
 .list-link-li:nth-last-child(-n + 3) {
   margin-bottom: 0;
+}
+
+.site-nav-icon {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+}
+
+.site-nav-sph {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+}
+
+.link-nav:hover {
+  fill: var(--accent-color);
+}
+
+.icon {
+  fill: #afb1b8;
+}
+
+.teams-a {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  /* background-color: green; */
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.teams-a:hover {
+  background-color: var(--accent-color);
+}
+
+.icon:hover {
+  fill: var(--primary-white-color);
+}
+
+.teams-list {
+  margin-right: 10px;
+}
+
+.teams-list:last-child {
+  margin-right: 0;
+}
+
+.team-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin: 16px 0 0 0;
+  padding: 0;
+}
+
+.customers-a {
+  width: 170px;
+  height: 92px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.customers-list-a {
+  fill: #afb1b8;
+}
+
+.customers-list-a:hover {
+  fill: var(--accent-color);
+}
+
+.footer-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
