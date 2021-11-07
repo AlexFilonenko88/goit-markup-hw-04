@@ -262,38 +262,9 @@ img {
   width: 270px;
 }
 
-/* .offers-list-nav::before {
-  content: "";
-  display: block;
-  height: 120px;
-
-  background-size: 70px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: #f5f4fa;
-  margin-bottom: 30px;
-  border-radius: 4px;
-}
-
-.icon-antenna::before {
-  background-image: url("../images/offers/Group1.svg");
-}
-
-.icon-clock::before {
-  background-image: url("../images/offers/clock.svg");
-}
-
-.icon-diagram::before {
-  background-image: url("../images/offers/diagram.svg");
-}
-
-.icon-astronaut::before {
-  background-image: url("../images/offers/astronaut.svg");
-}
-
 .offers-list-nav:last-child {
   margin-right: 0;
-} */
+}
 
 .icon-list {
   display: flex;
