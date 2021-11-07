@@ -170,6 +170,8 @@ img {
   letter-spacing: 0.03em;
 
   border: none;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .button-portfolio {
   min-width: 128px;
@@ -188,6 +190,8 @@ img {
 .button-portfolio:focus {
   background-color: var(--accent-color);
   color: #ffffff;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .hero {
@@ -562,9 +566,9 @@ img {
 .list-link-hp {
   padding: 20px 24px 17px;
 
-  border-right: 1px solid #757575;
-  border-bottom: 1px solid #757575;
-  border-left: 1px solid #757575;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
 }
 
 .list-name {
@@ -625,10 +629,10 @@ img {
   background-color: #ffffff;
 }
 
-.list-link-li:hover,
-.list-link-li:focus {
-  box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
-    0px 2px 1px rgb(0 0 0 / 20%);
+.list-link-hp:hover,
+.list-link-hp:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .list-link-hp:hover,
@@ -650,12 +654,14 @@ img {
   width: 16px;
   height: 12px;
   margin-right: 10px;
+  /* fill: #757575; */
 }
 
 .site-nav-sph {
   width: 10px;
   height: 16px;
   margin-right: 10px;
+  /* fill: #757575; */
 }
 
 .link-nav:hover,
@@ -675,16 +681,6 @@ img {
   justify-content: center;
   align-items: center;
 }
-
-/* .teams-a:hover,
-.teams-a:focus {
-  background-color: var(--accent-color);
-}
-
-.icon:hover,
-.icon:focus {
-  fill: var(--primary-white-color);
-} */
 
 .teams-a:hover,
 .teams-a:focus,
