@@ -204,14 +204,10 @@ img {
 }
 
 .hero {
-  height: 600px;
-  outline: 1px solid black;
   max-width: 1600px;
   margin-right: auto;
   margin-left: auto;
-  background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
@@ -271,7 +267,6 @@ img {
   justify-content: center;
   align-items: center;
   background-color: #f5f4fa;
-  width: 270px;
   height: 120px;
   border-radius: 4px;
   margin-bottom: 30px;
@@ -386,17 +381,26 @@ img {
 }
 
 .customers-list {
-  border: 1px solid #afb1b8;
-  box-sizing: border-box;
-  border-radius: 4px;
   margin: 0 30px 0 0;
   width: 170px;
   height: 92px;
 }
 
-.customers-list:hover,
-.customers-list:focus {
+.customers-a {
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.customers-a:hover,
+.customers-a:focus {
   border: 1px solid var(--accent-color);
+}
+
+.customers-a:hover,
+.customers-a:focus,
+.customers-list-a:hover,
+.customers-list-a:focus {
+  fill: var(--accent-color);
 }
 
 .customers-list:last-child {
@@ -474,7 +478,7 @@ img {
 }
 
 .teams-np {
-  padding: 30px 0;
+  padding: 30px 10px;
 }
 
 .list-footer {
@@ -531,7 +535,6 @@ img {
 .link-nav {
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 
 .list-link-hp {
@@ -589,7 +592,9 @@ img {
   flex-wrap: wrap;
   margin: 0;
 }
+
 .list-link {
+  display: block;
   text-decoration: none;
 }
 
@@ -600,14 +605,14 @@ img {
   background-color: #ffffff;
 }
 
-.list-link-hp:hover,
-.list-link-hp:focus {
+.list-link:hover,
+.list-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.list-link-hp:hover,
-.list-link-hp:focus {
+.list-link:hover,
+.list-link:focus {
   border-right: 0;
   border-bottom: 0;
   border-left: 0;
@@ -625,14 +630,14 @@ img {
   width: 16px;
   height: 12px;
   margin-right: 10px;
-  /* fill: #757575; */
+  fill: currentColor;
 }
 
 .site-nav-sph {
   width: 10px;
   height: 16px;
   margin-right: 10px;
-  /* fill: #757575; */
+  fill: currentColor;
 }
 
 .link-nav:hover,
@@ -640,17 +645,14 @@ img {
   fill: var(--accent-color);
 }
 
-.icon {
-  fill: #afb1b8;
-}
-
 .teams-a {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  display: inline-flex;
+  display: flex;
   justify-content: center;
   align-items: center;
+  fill: #afb1b8;
 }
 
 .teams-a:hover,
@@ -679,20 +681,15 @@ img {
 }
 
 .customers-a {
-  width: 170px;
-  height: 92px;
-  display: inline-flex;
+  width: 100%;
+  height: 100%;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.customers-list-a {
+.customers-a {
   fill: #afb1b8;
-}
-
-.customers-list-a:hover,
-.customers-list-a:focus {
-  fill: var(--accent-color);
 }
 
 .footer-list {
@@ -717,4 +714,8 @@ img {
 
 .teams-icon {
   background-color: rgba(255, 255, 255, 0.1);
+}
+
+.icon-svg {
+  fill: var(--primary-white-color);
 }
